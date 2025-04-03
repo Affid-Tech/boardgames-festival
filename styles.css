@@ -60,7 +60,7 @@ body {
 
 .carousel-wrapper {
   background: linear-gradient(90deg, #ffffff 0%, #eefaf0 50%, #ffffff 100%);
-  padding: 60px 0;
+  padding: 30px 0;
   width: 100vw;
   margin-left: calc(-50vw + 50%);
 }
@@ -74,7 +74,7 @@ body {
 .carousel-track {
   display: flex;
   width: max-content;
-  animation: scroll 40s linear infinite;
+  animation: scroll 140s linear infinite;
 }
 
 .carousel-card {
