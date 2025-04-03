@@ -45,7 +45,7 @@ body {
 
 .game-card img {
   height: 240px;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .carousel-wrapper {
