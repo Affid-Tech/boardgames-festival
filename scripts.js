@@ -12,3 +12,20 @@ fetch('sources/games.json')
     const cards = games.concat(games).map(generateCard).join('');
     track.innerHTML = cards;
   });
+
+fetch('sources/tournaments.json')
+  .then(response => response.json())
+  .then(tournaments => {
+    const container = document.querySelector('.section .row');
+    const generateTournament = (t) => `
+      <div class="col">
+        <div class="card game-card border-danger">
+          <img src="${t.image}" class="card-img-top" alt="${t.name}">
+          <div class="card-body">
+            <h5 class="card-title">${t.name}</h5>
+          </div>
+        </div>
+      </div>`;
+    const cards = tournaments.map(generateTournament).join('');
+    container.innerHTML = cards;
+  });
