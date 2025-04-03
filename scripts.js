@@ -36,7 +36,7 @@ fetch('sources/tournaments.json')
         cards.push(`
           <div class="col">
             <div class="card game-card border-secondary">
-              <img src="https://via.placeholder.com/400x200?text=Добавь+игру" class="card-img-top" alt="placeholder">
+              <img src="assets/tournament-placeholder.png" class="card-img-top" alt="placeholder">
               <div class="card-body text-center">
                 <h5 class="card-title">${placeholders[i - tournaments.length]}</h5>
               </div>
