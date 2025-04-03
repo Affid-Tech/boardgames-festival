@@ -44,7 +44,7 @@ fetch('sources/tournaments.json')
           </div>`);
       }
       cards.push(`
-        <div class="col-12 text-center">
+        <div class="col-12 col-md-12 col-lg-12 text-center">
           <a href="https://forms.gle/Qhr4FQAvPULJRdo99" target="_blank" class="btn btn-outline-primary btn-lg mt-3">
             Выбери игры для турниров!
           </a>
