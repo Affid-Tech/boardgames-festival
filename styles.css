@@ -25,10 +25,10 @@ body {
 
 .headers {
   color: #098181;
-}
 
-.headers .lead {
-  color: #044343;
+  .lead, .place {
+    color: #044343;
+  }
 }
 
 .section {
