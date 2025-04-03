@@ -17,6 +17,7 @@ fetch('sources/tournaments.json')
   .then(response => response.json())
   .then(tournaments => {
     const container = document.querySelector('.section .row');
+    const section = document.querySelector('.section');
     const generateTournament = (t) => `
       <div class="col">
         <div class="card game-card border-danger">
@@ -26,6 +27,29 @@ fetch('sources/tournaments.json')
           </div>
         </div>
       </div>`;
-    const cards = tournaments.map(generateTournament).join('');
-    container.innerHTML = cards;
+
+    let cards = tournaments.map(generateTournament);
+
+    if (tournaments.length < 3) {
+      const placeholders = ["Твоя любимая игра", "Твоя вторая любимая игра"];
+      for (let i = tournaments.length; i < 2; i++) {
+        cards.push(`
+          <div class="col">
+            <div class="card game-card border-secondary">
+              <img src="https://via.placeholder.com/400x200?text=Добавь+игру" class="card-img-top" alt="placeholder">
+              <div class="card-body text-center">
+                <h5 class="card-title">${placeholders[i]}</h5>
+              </div>
+            </div>
+          </div>`);
+      }
+      cards.push(`
+        <div class="col-12 text-center">
+          <a href="https://forms.gle/Qhr4FQAvPULJRdo99" target="_blank" class="btn btn-outline-primary btn-lg mt-3">
+            Выбери игры для турниров!
+          </a>
+        </div>`);
+    }
+
+    container.innerHTML = cards.join('');
   });
