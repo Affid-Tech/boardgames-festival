@@ -32,7 +32,7 @@ fetch('sources/tournaments.json')
 
     if (tournaments.length < 3) {
       const placeholders = ["Твоя любимая игра", "Твоя вторая любимая игра"];
-      for (let i = tournaments.length; i < 2; i++) {
+      for (let i = tournaments.length; i <= 2; i++) {
         cards.push(`
           <div class="col">
             <div class="card game-card border-secondary">
