@@ -37,10 +37,6 @@ body {
   z-index: -1;
 }
 
-.icon1 { top: 10%; left: 5%; width: 120px; }
-.icon2 { top: 40%; right: 10%; width: 140px; }
-.icon3 { bottom: 10%; left: 40%; width: 100px; }
-
 .section {
   background: rgba(255, 255, 255, 0.95);
   border-radius: 15px;
