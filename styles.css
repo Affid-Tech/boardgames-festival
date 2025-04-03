@@ -31,12 +31,6 @@ body {
   color: #044343;
 }
 
-.luxembourg-icon {
-  position: fixed;
-  opacity: 0.04;
-  z-index: -1;
-}
-
 .section {
   background: rgba(255, 255, 255, 0.95);
   border-radius: 15px;
