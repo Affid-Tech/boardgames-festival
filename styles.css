@@ -27,7 +27,7 @@ body {
   color: #098181;
 
   .lead, .place {
-    color: #044343;
+    color: #044343 !important;
   }
 }
 
