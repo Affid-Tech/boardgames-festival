@@ -22,7 +22,7 @@ fetch('sources/tournaments.json')
       <div class="col">
         <div class="card game-card border-danger">
           <img src="${t.image}" class="card-img-top" alt="${t.name}">
-          <div class="card-body">
+          <div class="card-body text-center">
             <h5 class="card-title">${t.name}</h5>
           </div>
         </div>
