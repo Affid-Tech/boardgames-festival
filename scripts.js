@@ -20,7 +20,7 @@ fetch('sources/tournaments.json')
     const section = document.querySelector('.section');
     const generateTournament = (t) => `
       <div class="col">
-        <div class="card game-card border-danger">
+        <div class="card game-card border-secondary">
           <img src="${t.image}" class="card-img-top" alt="${t.name}">
           <div class="card-body text-center">
             <h5 class="card-title">${t.name}</h5>
