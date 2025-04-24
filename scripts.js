@@ -43,13 +43,14 @@ fetch('sources/tournaments.json')
             </div>
           </div>`);
       }
-      cards.push(`
+    }
+    cards.push(`
         <div class="col-12 col-md-12 col-lg-12 text-center">
+        <a href="https://t.me/Affid_fedorov" class="btn btn-primary btn-lg px-5">Хочу провести игру!</a>
           <a href="https://forms.gle/Qhr4FQAvPULJRdo99" target="_blank" class="btn btn-outline-primary btn-lg mt-3">
-            Выбери игры для турниров!
+            Выбери игры для дня настольных игр!
           </a>
         </div>`);
-    }
 
     container.innerHTML = cards.join('');
   });
